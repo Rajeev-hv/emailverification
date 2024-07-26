@@ -1,7 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(to right, #1e3c72, #2a5298);
-    color: #fff;
+    background: linear-gradient(to right, #FF6F61, #DE1E7E);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,80 +9,73 @@ body {
 }
 
 .container {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 40px 50px;
-    border-radius: 20px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     max-width: 400px;
     width: 100%;
     text-align: center;
 }
 
 .form-group {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .form-group label {
     display: block;
     margin-bottom: 10px;
     font-weight: bold;
-    font-size: 18px;
-    color: #ecf0f1;
+    font-size: 16px;
+    color: #333;
 }
 
 .form-group input[type="text"] {
     width: 100%;
-    padding: 15px 20px;
-    font-size: 18px;
-    border: none;
-    border-radius: 25px;
-    background: rgba(255, 255, 255, 0.2);
-    color: #ecf0f1;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     box-sizing: border-box;
-    transition: all 0.3s ease;
+    transition: border 0.3s;
 }
 
 .form-group input[type="text"]:focus {
-    background: rgba(255, 255, 255, 0.3);
+    border-color: #FF6F61;
     outline: none;
-    box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
 }
 
 .form-group input[type="submit"] {
-    background: linear-gradient(to right, #ff512f, #dd2476);
+    background: linear-gradient(to right, #FF6F61, #DE1E7E);
     border: none;
-    padding: 15px 30px;
+    padding: 12px 20px;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     cursor: pointer;
-    border-radius: 25px;
-    transition: all 0.3s ease;
+    border-radius: 5px;
+    transition: background 0.3s;
 }
 
 .form-group input[type="submit"]:hover {
-    background: linear-gradient(to right, #dd2476, #ff512f);
+    background: linear-gradient(to right, #DE1E7E, #FF6F61);
 }
 
 .message {
     display: none;
     margin-top: 20px;
-    padding: 15px;
-    border-radius: 10px;
-    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
 }
 
 .message.error {
     color: #e74c3c;
-    background: rgba(231, 76, 60, 0.2);
-    border: 1px solid #e74c3c;
+    background: rgba(231, 76, 60, 0.1);
 }
 
 .message.success {
     color: #2ecc71;
-    background: rgba(46, 204, 113, 0.2);
-    border: 1px solid #2ecc71;
+    background: rgba(46, 204, 113, 0.1);
 }
+
 
