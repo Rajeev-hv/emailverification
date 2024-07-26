@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background: radial-gradient(circle, #2c3e50, #4a5568);
+    background: linear-gradient(to right, #1e3c72, #2a5298);
     color: #fff;
     display: flex;
     justify-content: center;
@@ -12,7 +12,7 @@ body {
 .container {
     background-color: rgba(255, 255, 255, 0.1);
     padding: 40px 50px;
-    border-radius: 15px;
+    border-radius: 20px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -53,7 +53,7 @@ body {
 }
 
 .form-group input[type="submit"] {
-    background: linear-gradient(to right, #3498db, #8e44ad);
+    background: linear-gradient(to right, #ff512f, #dd2476);
     border: none;
     padding: 15px 30px;
     color: white;
@@ -64,7 +64,7 @@ body {
 }
 
 .form-group input[type="submit"]:hover {
-    background: linear-gradient(to right, #8e44ad, #3498db);
+    background: linear-gradient(to right, #dd2476, #ff512f);
 }
 
 .message {
@@ -86,3 +86,4 @@ body {
     background: rgba(46, 204, 113, 0.2);
     border: 1px solid #2ecc71;
 }
+
