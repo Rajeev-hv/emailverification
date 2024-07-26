@@ -1,1 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Format Verification</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <form onsubmit="handleSubmit(event)">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Verify Email">
+            </div>
+            <div id="message" class="message"></div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
 
