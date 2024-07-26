@@ -1,12 +1,6 @@
-function validateEmail() {
-    const email = document.getElementById("email").value;
+function validateEmail(email) {
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    if (!emailRegex.test(email)) {
-        showMessage("Failed: Please enter a valid email address.", "error");
-        return false;
-    }
-    showMessage("Success: Email address is valid!", "success");
-    return true;
+    return emailRegex.test(email);
 }
 
 function showMessage(message, type) {
@@ -18,5 +12,11 @@ function showMessage(message, type) {
 
 function handleSubmit(event) {
     event.preventDefault();
-    validateEmail();
+    const email = document.getElementById("email").value;
+    if (validateEmail(email)) {
+        console.log(`Entered Email: ${email}`);
+        showMessage("Success: Email address is valid!", "success");
+    } else {
+        showMessage("Failed: Please enter a valid email address.", "error");
+    }
 }
