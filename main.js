@@ -20,4 +20,3 @@ function handleSubmit(event) {
     event.preventDefault();
     validateEmail();
 }
-
